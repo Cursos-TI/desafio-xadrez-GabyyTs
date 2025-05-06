@@ -6,27 +6,31 @@
 
 int main() {
     // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+    printf("*** XADREZ - MOVIMENTANDO AS PEÇAS ***");
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+    //MOVIMENTAÇÃO DA TORRE - 5 CASAS PARA A DIREITA USANDO O WHILE
+    int torre = 1;
+    printf("\nMovimentação da TORRE!\n");
+    while (torre <= 5) {
+        printf("%d. Direita.\n", torre);
+        torre++;
+    }
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
-
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
-
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
-
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+    //MOVIMENTAÇÃO DO BISPO - 5 CASAS NA DIAGONAL PARA CIMA E À DIREITA USANDO O DO-WHILE
+    int bispo = 1;
+    printf("\nMovimentação do BISPO!\n");
+    do {
+        printf("%d. Diagonal: Cima, Direita.\n", bispo);
+        bispo++;
+    } while (bispo <= 5);
+    
+    //MOVIMENTAÇÃO DA RAINHA - 8 CASAS PARA A ESQUERDA USANDO O FOR
+    int rainha;
+    printf("\nMovimentação da RAINHA!\n");
+    for (rainha = 1; rainha <=8; rainha++) {
+        printf("%d. Esquerda.\n", rainha);
+    }
 
     return 0;
 }
